@@ -15,6 +15,8 @@
 
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
+#define MO_TO(layer) &mo_to layer layer
+
 // &msc {
 //     acceleration-exponent = <1>;      // 0
 //     time-to-max-speed-ms = <100>;       // 300
@@ -72,7 +74,7 @@
 &kp C_MUTE  &kp LEFT_GUI  &kp LALT  &kp LCTRL   &kp RET  &mo_to 2 4         &kp ENTER       &mo_to 1 3  &kp SPACE  &kp RCTRL  &kp RALT      &kp RGUI  
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;`````````````
         };
 
         layer_1 {
